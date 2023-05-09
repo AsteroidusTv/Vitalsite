@@ -358,6 +358,12 @@ nav {
 
 	}
 
+	.network:hover {
+
+		transform: translateY(0px);
+
+	}
+
 	.scrollbutton {
 
 		/*margin-top: 1%*/
@@ -372,12 +378,14 @@ nav {
 
 	}
 
-	.scroll::before {
+	.scroll::after {
 
 		display: none;
 
 
 	}
+
+
 
 }
 
