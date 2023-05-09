@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+
+	margin: 0;
+	border: 0;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	animation-name: all;
+	animation-duration: 1s;
+
+}
+
+body {
+
+	background-color: black;
+
+}
+
+/*Header*/
+/*Header style*/
+
+header {
+
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	
+}
+
+/*Header small title*/
+
+header h2 {
+
+	font-size: 150%;
+
+}
+
+/*Header big title*/
+
+header h1 {
+
+	font-size: 1000%;
+
+}
+
+/*Lines*/
+/*Lines principal style*/
+
+.line, .line-text, .line-bottom {
+
+	height: 2px;
+	background-color: white;
+
+}
+
+/*Secondary line-text style*/
+
+.line-text {
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+/*Top image*/
+/*Top image style*/
+
+.top-image {
+
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+/*Main site image style*/
+.top-image img 
+{
+
+	width: 100%;
+	border-radius: 50px;
+
+}
+
+.content-text {
+
+	margin: 15%;
+
+}
+
+.container1 {
+
+	background-color: red;
+
+}
+
+/* Content text title */
+
+.content-text h1 {
+
+	margin-bottom: 10px;
+	font-size: 45px;
+
+}
+
+/* Content text paragraph */
+
+.content-text p {
+
+	text-align: justify;
+
+}
+
+/*Content text images*/
+/*Contentr text images style*/
+
+.content-text .img, .img1 {
+
+	
+	width: 100%;
+	border-radius: 30px;
+	
+}
+
+.content-text .img1 {
+
+	margin-top: 10px;
+
+}
+
+
+.container {
+
+	margin-top: 50px;
+
+}
+
+/*Container button*/
+/*Container button style*/
+
+.container button {
+
+	
+	width: 75%;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	background-color: black;
+	transition: 0.2s ease-in-out;
+
+}
+
+.container button:hover {
+
+	width: 100%;
+	height: 70px;
+	font-size: 25px;
+	box-shadow: 0 0 10px 1px white;
+
+}
+
+/*Fotter style*/
+/*Github image style*/
+
+.github-image {
+
+	margin-top: -14%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	display: block;
+	transition: 0.3s ease-in-out;
+
+}
+
+.github-image:hover {
+
+	width: 180px;
+
+}
+
+/*Navigation bar*/
+/*Navigation bar style*/
+
+nav {
+
+    border-bottom: 2px solid white;
+    position: fixed;
+    top: -80px;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    transition: 2s ;
+    
+}
+
+/*Navigation button style*/
+
+.scrollbutton {
+
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+    background: none;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+/* Navigation button text style */
+
+.scroll {
+
+    color: rgb(165, 159, 159);
+    font-size: 3em;
+    transition: 0.3s; 
+   
+}
+
+.scroll:hover {
+
+    color:white;
+
+}
+
+/*Animations*/
+
+
+@keyframes all{
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(-5px);
+
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+
+}
+
+/*Responsive for standart mobilephones*/
+
+@media screen and (max-width: 875px) {
+
+	header h2 {
+
+		font-size: 15px;
+
+	}
+
+	header h1 {
+
+		font-size: 60px;
+
+	}
+
+	.top-image img {
+
+		border-radius: 12px;
+
+	}
+
+	.container {
+
+		margin-top: 20px;
+
+	}
+	.content-text h1 {
+
+		font-size: 25px;
+
+	}
+
+	.content-text p {
+
+		text-align: left;
+		font-size: 10px;
+
+	}
+
+	.content-text img, .img1 {
+
+		border-radius: 15px;
+
+	}
+
+	.content-text button {
+
+		width: 100%;
+		height: 35px;
+		font-size: 8px;
+
+	}
+
+	.content-text button:hover {
+
+		height: 35px;
+		font-size: 8px;
+		box-shadow: none;
+
+	}
+
+	.scrollbutton {
+
+		/*margin-top: 1%*/
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.scroll  {
+
+		font-size: 20px;
+		color: white;
+
+	}
+
+	.github-image {
+
+		width: 100px;
+		margin-bottom: 10px;
+
+	} 
+
+	.github-image:hover {
+
+		width: 100px;
+
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	header h1 {
+
+		font-size: 50px;
+
+	}
+
+	header h2 {
+
+		font-size: 10px;
+		margin-top: -10%;
+
+	}
+
+	.content-text h1 {
+
+		font-size: 20px;
+
+	}
+
+	.scrollbutton {
+
+		margin-left: 2%;
+		margin-right: 2%;
+
+	}
+
+}
