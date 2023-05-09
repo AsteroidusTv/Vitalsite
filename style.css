@@ -4,16 +4,19 @@
 
 	margin: 0;
 	border: 0;
+	padding: 0;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	animation-name: all;
 	animation-duration: 1s;
+	anim
 
 }
 
 body {
 
 	background-color: black;
+	animation-duration: 1s;
 
 }
 
@@ -90,7 +93,6 @@ header h1 {
 
 }
 
-
 /* Content text title */
 
 .content-text h1 {
@@ -134,7 +136,7 @@ header h1 {
 
 .container1 {
 
-	margin-top: -200px;
+	margin-top: -140px;
 
 }
 
@@ -151,7 +153,7 @@ header h1 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 15px;
-	background-color: black;
+	background-color: rgb(16, 15, 15);
 	transition: 0.2s ease-in-out;
 
 }
@@ -162,28 +164,49 @@ header h1 {
 	height: 70px;
 	font-size: 25px;
 	box-shadow: 0 0 10px 1px white;
+	background-color: black;
 
 }
 
 /*Fotter style*/
-/*Github image style*/
 
-.github-image {
+.all-footer {
 
-	margin-top: -14%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 150px;
-	display: block;
+	margin-top: 2px;
+	display: flex;
+
+}
+
+.footer-right {
+
+	right: 2px;
+	position: absolute;
+}
+
+.network {
+
+	width: 40px;
+	height: 40px;
+	background: none;
+	border-radius: 50%;
 	transition: 0.3s ease-in-out;
 
 }
 
-.github-image:hover {
+.network:hover {
 
-	width: 180px;
+	transform: translateY(-2px);
+
 
 }
+
+.img-network {
+	
+	width: 40px;
+	height: 40px;
+	
+}
+
 
 /*Navigation bar*/
 /*Navigation bar style*/
@@ -205,7 +228,7 @@ nav {
 /*Navigation button style*/
 
 .scrollbutton {
-
+	
     border: none;
     margin-left: 10%;
     margin-right: 10%;
@@ -216,6 +239,26 @@ nav {
 }
 
 /* Navigation button text style */
+
+
+
+.scroll::after {
+
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+   
+}
+
+.scroll:hover::after {
+
+    transform: scale(1);
+}
 
 .scroll {
 
@@ -251,6 +294,7 @@ nav {
 	}
 
 }
+
 
 /*Responsive for standart mobilephones*/
 
@@ -328,16 +372,10 @@ nav {
 
 	}
 
-	.github-image {
+	.scroll::before {
 
-		width: 100px;
-		margin-bottom: 10px;
+		display: none;
 
-	} 
-
-	.github-image:hover {
-
-		width: 100px;
 
 	}
 
