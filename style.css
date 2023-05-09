@@ -48,10 +48,11 @@ header h1 {
 /*Lines*/
 /*Lines principal style*/
 
-.line, .line-text, .line-bottom {
+.line, .line-text, .lin-bottom {
 
 	height: 2px;
 	background-color: white;
+	border-radius: 5px;
 
 }
 
@@ -89,11 +90,6 @@ header h1 {
 
 }
 
-.container1 {
-
-	background-color: red;
-
-}
 
 /* Content text title */
 
@@ -133,6 +129,12 @@ header h1 {
 .container {
 
 	margin-top: 50px;
+
+}
+
+.container1 {
+
+	margin-top: -200px;
 
 }
 
@@ -290,7 +292,7 @@ nav {
 
 	}
 
-	.content-text img, .img1 {
+	.content-text img, .content-text .img1 {
 
 		border-radius: 15px;
 
@@ -368,5 +370,64 @@ nav {
 		margin-right: 2%;
 
 	}
+
+}
+
+@media screen and (min-width: 2000px) {
+
+	header h1 {
+
+		font-size: 1500%;
+
+	}
+
+	header h2 {
+
+		font-size: 200%;
+
+	}
+
+	.line, .line-text, .lin-bottom {
+
+		height: 6px;
+
+	}
+
+	.content-text p {
+
+		font-size: 30px;
+
+	}
+
+	.content-text img, .content-text .img1, .top-image img {
+
+		border-radius: 50px;
+
+	}
+
+	.container button {
+
+		height: 70px;
+		font-size: 25px;
+
+	}
+
+	.container button:hover {
+
+		height: 80px;
+
+	}
+
+	nav {
+
+		height: 100px;
+
+	}
+
+	.scroll {
+
+		font-size: 5em;
+
+	} 
 
 }
