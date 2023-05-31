@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+
+	margin: 0;
+	border: 0;
+	padding: 0;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	animation: all 1s;
+
+}
+
+:root {
+
+	--content-color: #FFFFFF;
+	--background: #000000;
+
+}
+
+body {
+
+	background-color: var(--background);
+
+}
+
+.main {
+
+	margin-left: 20%;
+	margin-right: 20%;
+
+}
+
+.main-title {
+
+	font-size: 120px;
+	text-align: center;
+	color: var(--content-color);
+
+}
+
+.line {
+
+	border-radius: 5px;
+	height: 2px;
+	background-color: var(--content-color);
+
+}
+
+.description {
+
+	text-align: justify;
+
+}
+
+.contents {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.content {
+
+	margin: 10px;
+	margin-top: 20px;
+
+}
+
+.qr-code {
+
+	height: 150px;
+	width: 150px;
+
+}
+
+.or {
+
+	font-size: 30px;
+
+}
+
+.btc {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.btc-link-2 {
+
+	font-size: 12px;
+	display: none;
+
+}
+
+.copy-button {
+
+	margin-top: 12px;
+	background: none;
+
+}
+ 
+.copy-icon {
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: translateX(-25px);
+
+}
+
+.copy-icon-copied {
+
+    width: 20px;
+    height: 20px;
+    display: none;
+
+}
+
+.relai-link {
+
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+
+}
+  
+.relai-link::before {
+
+    content: "";
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--content-color);
+    transition: width 0.3s ease-in-out;
+
+}
+  
+.relai-link:hover::before {
+
+    width: 100%;
+
+}
+
+@keyframes all {
+
+	0% {
+
+		opacity: 0;
+
+	}
+
+	100% {
+
+		opacity: 1;
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.main-title {
+
+		font-size: 80px;
+
+	}
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+	.contents {
+
+		text-align: center;
+		display: block;
+
+	}
+
+	.btc-link-1 {
+
+		transform: translateX(10px);
+
+	}
+
+	.copy-icon {
+
+		transform: translateX(-15px);
+
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.main-title {
+
+		font-size: 60px;
+
+	}
+
+	.description {
+
+		font-size: 8px;
+
+	}
+
+	.qr-code {
+
+		height: 80px;
+		width: 80px;
+
+	}
+
+	.or {
+
+		font-size: 15px;
+
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.main-title {
+
+		font-size: 32px;
+
+	}
+
+	.btc-link-1 {
+
+		font-size: 10px;
+
+	}
+	.btc-link-2 {
+
+		font-size: 4px;
+	}
+
+
+
+}
+
