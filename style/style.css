@@ -7,16 +7,13 @@
 	padding: 0;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	animation-name: all;
-	animation-duration: 1s;
-	anim
+	animation-name: all 1s;
 
 }
 
 body {
 
 	background-color: black;
-	animation-duration: 1s;
 
 }
 
