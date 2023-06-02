@@ -57,7 +57,7 @@ body {
 
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 
 }
 
@@ -65,6 +65,24 @@ body {
 
 	margin: 10px;
 	margin-top: 20px;
+
+}
+
+.left {
+
+	justify-content: left;
+
+}
+
+.center {
+
+	justify-content: center;
+
+}
+
+.right {
+
+	justify-content: right;
 
 }
 
